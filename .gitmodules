@@ -1,0 +1,3 @@
+[submodule "EfCore/EfCore.Core"]
+	path = EfCore/EfCore.Core
+	url = https://github.com/robsonc/EfCore.Core.git

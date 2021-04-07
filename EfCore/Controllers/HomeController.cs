@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Core;
 using EfCore.Data;
 using EfCore.Data.Entities;
 using Microsoft.AspNetCore.Mvc;
@@ -21,6 +22,9 @@ namespace EfCore.Controllers
 
         public async Task<IActionResult> Index()
         {
+            var logger = new Logger();
+            logger.LogInformation("Teste logger");
+            
             var endereco = new Endereco()
             {
                 Logradouro = "Rua 05"
